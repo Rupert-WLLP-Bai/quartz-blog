@@ -2,8 +2,6 @@
 title: Ad Astra Per Aspera
 ---
 
-![[assets/logo.jpg]]
-
 **Bai Junhao**
 *Backend | Embedded (MCU & SOC) | Distributed Systems | AUTOSAR CP*
 
