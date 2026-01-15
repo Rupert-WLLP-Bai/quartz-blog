@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "6badad090fe2de82",
+    "type": "split",
+    "children": [
+      {
+        "id": "12d4ae43eea72a61",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb5db5b7bd9873c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/Backend/PostgreSQL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PostgreSQL"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "aab63d3a38ceeffd",
+    "type": "split",
+    "children": [
+      {
+        "id": "191070653bccdff8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bbb63c63d4018516",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "86e34f81316e330c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f7f0bcdc273426bb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6459d3cc4db59ee4",
+    "type": "split",
+    "children": [
+      {
+        "id": "b2e30fdd3be6ca5d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "737362824e4f755c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "posts/Backend/PostgreSQL.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for PostgreSQL"
+            }
+          },
+          {
+            "id": "7cfedcf332ff1e87",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/Backend/PostgreSQL.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from PostgreSQL"
+            }
+          },
+          {
+            "id": "4e911f9fa82bcc69",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2992ba04356b52b7",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "0a526bed4de8f013",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "posts/Backend/PostgreSQL.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of PostgreSQL"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "publish:Publish changes...": false,
+      "janitor:Janitor: scan vault": false
+    }
+  },
+  "active": "bb5db5b7bd9873c0",
+  "lastOpenFiles": [
+    "assets/Untitled",
+    "posts/Academic/LaTeX.md",
+    "posts/Backend/PostgreSQL.md",
+    "assets/PostgreSQL/file-2026-01-15-23-07-09-246.png",
+    "assets/PostgreSQL",
+    "posts/Backend/assets/PostgreSQL/file-20260115230520490.png",
+    "posts/Backend/assets/PostgreSQL",
+    "posts/Backend/assets",
+    "posts/Backend/数据库优化.md",
+    "index.md",
+    "Pasted image 20260115230205.png",
+    "posts/Backend/MySQL.md",
+    "posts/Golang/Golang.md",
+    "posts/Golang/分布式KV.md",
+    "posts/Tools/Docker.md",
+    "assets/LeetCode/fig1.png",
+    "posts/Algorithms/LeetCode.md",
+    "posts/Algorithms/HOT100.md",
+    "posts/Algorithms/解题代码框架.md",
+    "posts/Algorithms/代码随想录.md",
+    "posts/Academic/Julia.md",
+    "posts/Academic/Jira.md",
+    "posts/Academic/IoT.md",
+    "posts/Academic/HKU-CS-Dissertation.md",
+    "posts/Academic/数学建模-Python.md",
+    "blog.md"
+  ]
+}

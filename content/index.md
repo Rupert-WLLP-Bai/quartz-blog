@@ -1,9 +1,11 @@
 ---
-title: Bai Junhao
+title: Ad Astra Per Aspera
 ---
 
-**Bai Junhao**  
-*Backend Developer | Distributed Systems Enthusiast*
+![[assets/logo.jpg]]
+
+**Bai Junhao**
+*Backend | Embedded (MCU & SOC) | Distributed Systems | AUTOSAR CP*
 
 ## 🛠️ Tech Stack & Focus
 *   **Core**: Backend Development, Distributed Systems
@@ -28,3 +30,5 @@ title: Bai Junhao
 
 ## 📝 Blog
 Explore my technical notes and articles in the [Posts](posts) section.
+
+> 💡 **View all posts sorted by date**: [Blog Archive →](blog)
