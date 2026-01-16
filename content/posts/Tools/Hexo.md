@@ -1,7 +1,7 @@
 ---
 title: Hexo
 date: 2021-11-28T10:38:19.000Z
-tags: [Tools, 博客, Hexo]
+tags: [Tools, Blog, Hexo]
 ---
 
 # 关于博客的一些设置

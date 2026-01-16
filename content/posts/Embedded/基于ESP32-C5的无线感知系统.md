@@ -1,7 +1,7 @@
 ---
 title: 基于ESP32-C5的无线感知系统
 date: 2025-06-26T15:54:41.000Z
-tags: [Embedded, C++, 嵌入式, ESP32-C5]
+tags: [Embedded, Cpp, ESP32C5, IoT]
 ---
 
 # 基于ESP32-C5的无线感知系统

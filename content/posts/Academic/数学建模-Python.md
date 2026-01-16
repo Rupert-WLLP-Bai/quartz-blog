@@ -1,7 +1,7 @@
 ---
 title: 数学建模-Python
 date: 2023-05-21T15:02:03.000Z
-tags: [Academic, 数学建模, 数学, 数值计算, Python, 规划, 拟合, 时间序列, 滑动窗口, pandas, numpy, scipy]
+tags: [Academic, MathematicalModeling, Mathematics, ScientificComputing, Python, Planning, Fitting, TimeSeries, SlidingWindow, Pandas, NumPy, SciPy]
 ---
 
 # 规划问题

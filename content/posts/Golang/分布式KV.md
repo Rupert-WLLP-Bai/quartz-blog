@@ -1,7 +1,7 @@
 ---
 title: 分布式KV
 date: 2025-06-26T15:54:01.000Z
-tags: [Golang, 分布式, KV存储]
+tags: [Golang, DistributedSystems, KeyValueStore]
 ---
 
 # 分布式KV

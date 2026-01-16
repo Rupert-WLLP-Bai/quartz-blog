@@ -1,7 +1,7 @@
 ---
 title: Java
 date: 2021-10-27T11:06:20.000Z
-tags: [Java, 后端]
+tags: [Java, Backend]
 ---
 
 # Java泛型

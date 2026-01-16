@@ -1,7 +1,7 @@
 ---
 title: PicX图床
 date: 2021-12-19T14:51:48.000Z
-tags: [Backend, 图床, 工具]
+tags: [Backend, ImageHosting, Tools]
 ---
 
 # PicX图床测试

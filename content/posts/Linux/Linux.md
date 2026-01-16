@@ -1,7 +1,7 @@
 ---
 title: Linux常用工具
 date: 2022-11-20T19:40:11.000Z
-tags: [Linux, 开发工具, shell]
+tags: [Linux, DevelopmentTool, Shell]
 ---
 
 - [valgrind](#valgrind)

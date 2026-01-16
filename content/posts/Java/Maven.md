@@ -1,7 +1,7 @@
 ---
 title: Maven
 date: 2021-10-27T11:11:33.000Z
-tags: [Java, 框架]
+tags: [Java, Framework, BuildTool]
 ---
 
 # Maven

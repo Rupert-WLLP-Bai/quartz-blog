@@ -1,7 +1,7 @@
 ---
 title: Rust-Roadmap
 date: 2026-01-03T14:17:37.000Z
-tags: Rust
+tags: [Rust, Learning, Roadmap]
 cover: ../../assets/rust-roadmap.png
 ---
 

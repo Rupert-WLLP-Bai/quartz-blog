@@ -1,7 +1,7 @@
 ---
 title: 使用Rust实现systemd配置文件解析工具
 date: 2023-05-24T12:03:46.000Z
-tags: [Rust, Linux, openEuler, 开源]
+tags: [Rust, Linux, OpenEuler, OpenSource]
 ---
 
 ## Gitee Issue

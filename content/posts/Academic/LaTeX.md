@@ -1,7 +1,7 @@
 ---
 title: LaTeX
 date: 2021-11-28T11:16:01.000Z
-tags: [Academic, 写作, 编程语言, LaTeX, 表格, 数学, 公式, 排版]
+tags: [Academic, Writing, ProgrammingLanguage, LaTeX, Tables, Mathematics, Formulas, Typesetting]
 ---
 
 # LaTeX基础

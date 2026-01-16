@@ -1,7 +1,7 @@
 ---
 title: LeetCode题目整理
 date: 2021-10-27T11:05:18.000Z
-tags: [Algorithm, 算法, LeetCode]
+tags: [Algorithm, LeetCode]
 ---
 
 # LeetCode整理

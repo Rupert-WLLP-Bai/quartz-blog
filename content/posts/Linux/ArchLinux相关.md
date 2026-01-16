@@ -1,7 +1,7 @@
 ---
 title: ArchLinux 相关记录
 date: 2023-06-06T13:12:19.000Z
-tags: [Linux, Arch Linux, VMware, VS Code, 操作系统, 开发工具]
+tags: [Linux, ArchLinux, VMware, VSCode, OperatingSystem, DevelopmentTool]
 ---
 
 # 在VMware上安装Arch Linux并使用VS Code连接

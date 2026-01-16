@@ -1,3 +1,9 @@
+---
+title: AIClient Secondary Development - API Features
+date: 2026-01-16
+tags: [SecondaryDevelopment, API, Golang, WebDevelopment, Analytics]
+---
+
 ## 二次开发功能
 
 ### 1. Kiro 账号剩余额度查询

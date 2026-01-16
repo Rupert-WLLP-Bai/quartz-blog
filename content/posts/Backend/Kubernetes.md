@@ -1,7 +1,7 @@
 ---
 title: Kubernetes
 date: 2025-07-30T16:06:57.000Z
-tags: [Backend, Kubernetes, 云原生, 容器化, DevOps, 微服务, 容器编排, 集群管理, 自动化部署, 容器网络]
+tags: [Backend, Kubernetes, CloudNative, Containerization, DevOps, Microservices, ContainerOrchestration, ClusterManagement, AutomatedDeployment, ContainerNetworking]
 ---
 
 # Kubernetes

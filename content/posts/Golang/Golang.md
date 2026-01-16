@@ -1,7 +1,7 @@
 ---
 title: Golang
 date: 2025-06-26T15:56:40.000Z
-tags: [Golang, 面试]
+tags: [Golang, Interview]
 ---
 
 # Golang 面试题

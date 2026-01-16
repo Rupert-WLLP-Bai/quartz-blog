@@ -1,7 +1,7 @@
 ---
 title: Rust圣经学习记录
 date: 2023-05-21T21:08:17.000Z
-tags: [Rust, 编程语言, 内存安全, 多线程, 泛型, Cargo]
+tags: [Rust, ProgrammingLanguage, MemorySafety, Multithreading, Generics, Cargo]
 ---
 
 # Rust Course

@@ -1,7 +1,7 @@
 ---
 title: Spring5
 date: 2021-12-07T15:40:17.000Z
-tags: [Java, 框架]
+tags: [Java, Framework, Spring]
 ---
 
 # Spring5

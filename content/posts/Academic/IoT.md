@@ -1,7 +1,7 @@
 ---
 title: IoT
 date: 2022-11-20T15:44:58.000Z
-tags: [Academic, IoT, Web, MQTT, 物联网, 嵌入式]
+tags: [Academic, IoT, Web, MQTT, Embedded]
 ---
 
 - [IoT](#iot)

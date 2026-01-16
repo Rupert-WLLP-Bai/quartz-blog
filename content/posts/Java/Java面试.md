@@ -1,7 +1,7 @@
 ---
 title: Java面试
 date: 2023-05-21T00:07:12.000Z
-tags: [Java, Spring, SpringBoot, 数据库, 后端, 算法, 计算机网络, 操作系统, 数据结构, LeetCode]
+tags: [Java, Spring, SpringBoot, Database, Backend, Algorithm, ComputerNetwork, OperatingSystem, DataStructure, LeetCode]
 ---
 
 

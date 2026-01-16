@@ -1,7 +1,7 @@
 ---
 title: Julia
 date: 2023-05-21T13:36:51.000Z
-tags: [Academic, 编程语言, 数据科学, 数值计算, 计算机编程, Julia, 数据科学与工程, 数值计算与科学计算]
+tags: [Academic, ProgrammingLanguage, DataScience, ScientificComputing, Julia]
 ---
 
 # Julia

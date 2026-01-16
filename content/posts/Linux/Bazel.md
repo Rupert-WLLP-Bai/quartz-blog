@@ -1,7 +1,7 @@
 ---
 title: Bazel
 date: 2022-11-24T11:13:24.000Z
-tags: [Linux, Bazel, C++, 构建工具]
+tags: [Linux, Bazel, Cpp, BuildTool]
 ---
 
 # Bazel

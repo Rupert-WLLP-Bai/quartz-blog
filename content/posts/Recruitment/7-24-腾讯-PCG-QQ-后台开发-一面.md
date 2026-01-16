@@ -1,7 +1,7 @@
 ---
 title: 7-24-腾讯-PCG-QQ-后台开发-一面
 date: 2025-07-24T19:48:56.000Z
-tags: [秋招, 腾讯, 后端, PCG, QQ]
+tags: [Recruitment, Tencent, Backend, TencentPCG, TencentQQ, Interview]
 ---
 
 ## 问题和回答记录

@@ -1,7 +1,7 @@
 ---
 title: Topic Guided Multi-faceted Semantic Disentanglement for CTR Prediction
 date: 2025-07-15T00:00:00.000Z
-tags: [Academic, CTR Prediction, Recommender Systems, NLP, Topic Modeling, Disentangled Representation Learning, Research]
+tags: [Academic, CTRPrediction, RecommenderSystems, NLP, TopicModeling, DisentangledRepresentationLearning, Research]
 ---
 
 ## 🧠 Introduction

@@ -1,7 +1,7 @@
 ---
 title: GoogleTest
 date: 2021-12-04T17:23:23.000Z
-tags: [Tools]
+tags: [Tools, Testing, GoogleTest, Cpp]
 ---
 
 # 使用GoogleTest写测试用例

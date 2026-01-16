@@ -1,7 +1,7 @@
 ---
 title: CMake
 date: 2021-12-15T20:14:50.000Z
-tags: [Embedded, C++, 跨平台, 构建工具, MSVC, 编码, CMake]
+tags: [Embedded, Cpp, CrossPlatform, BuildTool, MSVC, Encoding, CMake]
 ---
 
 # CMake 跨平台项目管理

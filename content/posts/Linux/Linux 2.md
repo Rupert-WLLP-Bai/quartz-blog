@@ -1,7 +1,7 @@
 ---
 title: Linux配置记录
 date: 2021-11-17T18:59:52.000Z
-tags: [Linux, 系统配置]
+tags: [Linux, SystemConfiguration]
 ---
 
 # 关于Linux的一些记录

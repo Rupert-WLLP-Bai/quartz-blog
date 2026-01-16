@@ -1,7 +1,7 @@
 ---
 title: CodeTop
 date: 2025-08-02T12:12:21.000Z
-tags: [Algorithm, 算法, LeetCode, CodeTop]
+tags: [Algorithm, LeetCode, CodeTop]
 ---
 
 # 近期未完成题目

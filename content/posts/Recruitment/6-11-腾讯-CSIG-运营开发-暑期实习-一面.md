@@ -1,7 +1,7 @@
 ---
 title: 6.11-腾讯-CSIG-运营开发-暑期实习-一面
 date: 2025-06-26T15:54:48.000Z
-tags: [秋招]
+tags: [Recruitment, Tencent, TencentCSIG, Interview]
 ---
 
 # 6.11 腾讯 一面 （6.17挂）
