@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "12d4ae43eea72a61",
+        "id": "7c9ab230f41cce81",
         "type": "tabs",
         "children": [
           {
-            "id": "bb5db5b7bd9873c0",
+            "id": "3078b4a292cd50f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Backend/PostgreSQL.md",
+                "file": "posts/SecondaryDevelopment/sysmaster-systemd-parser.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PostgreSQL"
+              "title": "sysmaster-systemd-parser"
+            }
+          },
+          {
+            "id": "abe0fc2a66e05494",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/SecondaryDevelopment/AIClient-2-API.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AIClient-2-API"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6459d3cc4db59ee4",
@@ -95,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Backend/PostgreSQL.md",
+                "file": "posts/SecondaryDevelopment/AIClient-2-API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for PostgreSQL"
+              "title": "Backlinks for AIClient-2-API"
             }
           },
           {
@@ -114,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Backend/PostgreSQL.md",
+                "file": "posts/SecondaryDevelopment/AIClient-2-API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from PostgreSQL"
+              "title": "Outgoing links from AIClient-2-API"
             }
           },
           {
@@ -157,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Backend/PostgreSQL.md",
+                "file": "posts/SecondaryDevelopment/AIClient-2-API.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of PostgreSQL"
+              "title": "Outline of AIClient-2-API"
             }
           }
         ]
@@ -186,18 +200,26 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "bb5db5b7bd9873c0",
+  "active": "abe0fc2a66e05494",
   "lastOpenFiles": [
+    "posts/SecondaryDevelopment/sysmaster-systemd-parser.md",
+    "posts/SecondaryDevelopment/AIClient-2-API.md",
+    "posts/SecondaryDevelopment",
+    "posts/Untitled",
+    "posts/Blockchain/Pump.fun.md",
+    "posts/Blockchain",
+    "blog.md",
+    "index.md",
+    "posts/Rust/使用Rust实现systemd配置文件解析工具.md",
+    "posts/Backend/PostgreSQL.md",
     "assets/Untitled",
     "posts/Academic/LaTeX.md",
-    "posts/Backend/PostgreSQL.md",
     "assets/PostgreSQL/file-2026-01-15-23-07-09-246.png",
     "assets/PostgreSQL",
     "posts/Backend/assets/PostgreSQL/file-20260115230520490.png",
     "posts/Backend/assets/PostgreSQL",
     "posts/Backend/assets",
     "posts/Backend/数据库优化.md",
-    "index.md",
     "Pasted image 20260115230205.png",
     "posts/Backend/MySQL.md",
     "posts/Golang/Golang.md",
@@ -212,7 +234,6 @@
     "posts/Academic/Jira.md",
     "posts/Academic/IoT.md",
     "posts/Academic/HKU-CS-Dissertation.md",
-    "posts/Academic/数学建模-Python.md",
-    "blog.md"
+    "posts/Academic/数学建模-Python.md"
   ]
 }
