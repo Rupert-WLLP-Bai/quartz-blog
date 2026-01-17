@@ -24,11 +24,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.ConditionalRender({
-      component: Component.RecentNotes({ title: "Recent Notes", limit: 5 }),
-      condition: (page) => page.fileData.slug === "index",
-    }),
-    Component.ConditionalRender({
-      component: Component.AllTags(),
+      component: Component.RecentNotes({ title: "Recent Notes", limit: 12 }),
       condition: (page) => page.fileData.slug === "index",
     }),
     Component.ConditionalRender({
@@ -56,7 +52,12 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        depth: 2,
+        scale: 1.0,
+      },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

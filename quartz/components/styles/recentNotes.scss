@@ -8,9 +8,16 @@
     list-style: none;
     margin-top: 1rem;
     padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
 
     & > li {
-      margin: 1rem 0;
+      margin: 0;
       .section > .desc > h3 > a {
         background-color: transparent;
       }
