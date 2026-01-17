@@ -24,7 +24,11 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.ConditionalRender({
-      component: Component.RecentNotes({ title: "Recent Notes", limit: 12 }),
+      component: Component.RecentNotes({
+        title: "Recent Notes",
+        limit: 12,
+        filter: (page) => page.slug !== "index" && page.slug !== "blog"
+      }),
       condition: (page) => page.fileData.slug === "index",
     }),
     Component.ConditionalRender({

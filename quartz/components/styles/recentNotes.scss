@@ -18,8 +18,22 @@
 
     & > li {
       margin: 0;
-      .section > .desc > h3 > a {
-        background-color: transparent;
+      min-width: 0; // Allow grid items to shrink below content size
+
+      .section {
+        min-width: 0; // Ensure section can shrink
+
+        & > .desc > h3 {
+          min-width: 0; // Ensure h3 can shrink
+
+          & > a {
+            background-color: transparent;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
       }
 
       .section > .meta {
