@@ -53,18 +53,18 @@ export default ((userOpts?: Partial<Options>) => {
                     <p class="meta">
                       {page.dates.created && (
                         <>
-                          创建于: <Date date={page.dates.created} locale={cfg.locale} />
+                          Created: <Date date={page.dates.created} locale={cfg.locale} />
                         </>
                       )}
                       {page.dates.modified && page.dates.created && " • "}
                       {page.dates.modified && (
                         <>
-                          更新于: <Date date={page.dates.modified} locale={cfg.locale} />
+                          Updated: <Date date={page.dates.modified} locale={cfg.locale} />
                         </>
                       )}
                       {page.wordCount && (page.dates.created || page.dates.modified) && " • "}
                       {page.wordCount && (
-                        <span>{page.wordCount.toLocaleString("zh-CN")} 字</span>
+                        <span>{page.wordCount.toLocaleString("en-US")} words</span>
                       )}
                     </p>
                   )}
