@@ -51,7 +51,21 @@ export default ((userOpts?: Partial<Options>) => {
                 <div class="section">
                   {page.dates && (
                     <p class="meta">
-                      <Date date={getDate(cfg, page)!} locale={cfg.locale} />
+                      {page.dates.created && (
+                        <>
+                          创建于: <Date date={page.dates.created} locale={cfg.locale} />
+                        </>
+                      )}
+                      {page.dates.modified && page.dates.created && " • "}
+                      {page.dates.modified && (
+                        <>
+                          更新于: <Date date={page.dates.modified} locale={cfg.locale} />
+                        </>
+                      )}
+                      {page.wordCount && (page.dates.created || page.dates.modified) && " • "}
+                      {page.wordCount && (
+                        <span>{page.wordCount.toLocaleString("zh-CN")} 字</span>
+                      )}
                     </p>
                   )}
                   <div class="desc">

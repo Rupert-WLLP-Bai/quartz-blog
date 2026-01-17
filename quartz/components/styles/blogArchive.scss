@@ -26,6 +26,10 @@
         margin: 0 0 0.5rem 0;
         opacity: 0.6;
         font-size: 0.9rem;
+
+        @media (max-width: 600px) {
+          word-break: break-word;
+        }
       }
 
       .section > .description {

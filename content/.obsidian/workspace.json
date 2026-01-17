@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "7c9ab230f41cce81",
+        "id": "de53879a9749e058",
         "type": "tabs",
         "children": [
           {
-            "id": "3078b4a292cd50f0",
+            "id": "4cf4ef6be6705a72",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/SecondaryDevelopment/sysmaster-systemd-parser.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "sysmaster-systemd-parser"
-            }
-          },
-          {
-            "id": "abe0fc2a66e05494",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/SecondaryDevelopment/AIClient-2-API.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AIClient-2-API"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -56,7 +37,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -109,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/SecondaryDevelopment/AIClient-2-API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for AIClient-2-API"
+              "title": "Backlinks"
             }
           },
           {
@@ -128,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/SecondaryDevelopment/AIClient-2-API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from AIClient-2-API"
+              "title": "Outgoing links"
             }
           },
           {
@@ -171,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/SecondaryDevelopment/AIClient-2-API.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of AIClient-2-API"
+              "title": "Outline"
             }
           }
         ]
@@ -196,46 +174,51 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "publish:Publish changes...": false,
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "abe0fc2a66e05494",
+  "active": "4cf4ef6be6705a72",
   "lastOpenFiles": [
+    "posts/TO THE SKY.md",
+    "posts/Cpp/C++.md",
+    "posts/Backend/Kubernetes.md",
+    "posts/Backend/k8s-crawl.md",
+    "posts/SecondaryDevelopment/sysmaster-systemd-parser.md",
+    "index.md",
+    "posts/SecondaryDevelopment/AIClient-2-API.md",
+    "assets/AIClient-2-API/file-2026-01-17-21-26-20-688.png",
+    "assets/AIClient-2-API/file-2026-01-17-21-25-55-599.png",
+    "assets/AIClient-2-API",
+    "blog.md",
+    "assets/C++/file-2026-01-17-20-43-48-304.png",
+    "assets/C++",
+    "posts/Embedded/CMake.md",
+    "posts/Productivity/Multi-Agent 具体应用.md",
+    "posts/Productivity",
+    "posts/Recruitment/6-18-联洲-嵌入式-提前批-一面.md",
+    "posts/Recruitment/6-11-腾讯-CSIG-运营开发-暑期实习-一面.md",
+    "posts/Recruitment/6-24-联洲-嵌入式-提前批-二面.md",
+    "posts/Golang/分布式KV.md",
+    "posts/Academic/HKU-CS-Dissertation.md",
+    "posts/Academic/数学建模-Python.md",
+    "posts/Linux/Linux.md",
+    "posts/Linux/Bazel.md",
+    "posts/Linux/ArchLinux相关.md",
+    "posts/Rust/使用Rust实现systemd配置文件解析工具.md",
+    "posts/Recruitment/2026 秋招合集.md",
     "posts/Blockchain/Solana.md",
     "posts/Blockchain/Raydium.md",
     "posts/Blockchain/Pump.fun.md",
-    "posts/SecondaryDevelopment/AIClient-2-API.md",
-    "posts/SecondaryDevelopment/sysmaster-systemd-parser.md",
     "posts/SecondaryDevelopment",
-    "posts/Untitled",
     "posts/Blockchain",
-    "blog.md",
-    "index.md",
-    "posts/Rust/使用Rust实现systemd配置文件解析工具.md",
     "posts/Backend/PostgreSQL.md",
     "assets/Untitled",
-    "posts/Academic/LaTeX.md",
     "assets/PostgreSQL/file-2026-01-15-23-07-09-246.png",
     "assets/PostgreSQL",
     "posts/Backend/assets/PostgreSQL/file-20260115230520490.png",
     "posts/Backend/assets/PostgreSQL",
     "posts/Backend/assets",
-    "posts/Backend/数据库优化.md",
     "Pasted image 20260115230205.png",
-    "posts/Backend/MySQL.md",
-    "posts/Golang/Golang.md",
-    "posts/Golang/分布式KV.md",
-    "posts/Tools/Docker.md",
-    "assets/LeetCode/fig1.png",
-    "posts/Algorithms/LeetCode.md",
-    "posts/Algorithms/HOT100.md",
-    "posts/Algorithms/解题代码框架.md",
-    "posts/Algorithms/代码随想录.md",
-    "posts/Academic/Julia.md",
-    "posts/Academic/Jira.md",
-    "posts/Academic/IoT.md",
-    "posts/Academic/HKU-CS-Dissertation.md",
-    "posts/Academic/数学建模-Python.md"
+    "assets/LeetCode/fig1.png"
   ]
 }

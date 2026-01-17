@@ -30,3 +30,5 @@ title: Ad Astra Per Aspera
 Explore my technical notes and articles in the [Posts](posts) section.
 
 > 💡 **View all posts sorted by date**: [Blog Archive →](blog)
+
+[[TO THE SKY]]
