@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f886f995c171e1ff",
+        "id": "a021926881edf9e4",
         "type": "tabs",
         "children": [
           {
-            "id": "9de71afb1c212124",
+            "id": "2f8f889eedadd052",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "posts/Blockchain/SOLSCAN.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "SOLSCAN"
             }
           }
         ]
@@ -177,19 +181,29 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "9de71afb1c212124",
+  "active": "2f8f889eedadd052",
   "lastOpenFiles": [
+    "posts/AMONG THE CLOUDS.md",
+    "posts/Blockchain/SOLSCAN.md",
+    "posts/DOWN TO EARTH.md",
     "posts/TO THE SKY.md",
+    "index.md",
+    "blog.md",
+    "posts/Backend/k8s-crawl.md",
+    "posts/Backend/数据库优化.md",
+    "posts/Backend/Redis.md",
+    "posts/Backend/MySQL.md",
+    "posts/Backend/Nginx.md",
+    "posts/Backend/PicX图床.md",
+    "posts/Backend/消息队列.md",
+    "posts/Backend/RabbitMQ.md",
     "posts/Cpp/C++.md",
     "posts/Backend/Kubernetes.md",
-    "posts/Backend/k8s-crawl.md",
     "posts/SecondaryDevelopment/sysmaster-systemd-parser.md",
-    "index.md",
     "posts/SecondaryDevelopment/AIClient-2-API.md",
     "assets/AIClient-2-API/file-2026-01-17-21-26-20-688.png",
     "assets/AIClient-2-API/file-2026-01-17-21-25-55-599.png",
     "assets/AIClient-2-API",
-    "blog.md",
     "assets/C++/file-2026-01-17-20-43-48-304.png",
     "assets/C++",
     "posts/Embedded/CMake.md",
@@ -201,17 +215,8 @@
     "posts/Golang/分布式KV.md",
     "posts/Academic/HKU-CS-Dissertation.md",
     "posts/Academic/数学建模-Python.md",
-    "posts/Linux/Linux.md",
-    "posts/Linux/Bazel.md",
-    "posts/Linux/ArchLinux相关.md",
-    "posts/Rust/使用Rust实现systemd配置文件解析工具.md",
-    "posts/Recruitment/2026 秋招合集.md",
-    "posts/Blockchain/Solana.md",
-    "posts/Blockchain/Raydium.md",
-    "posts/Blockchain/Pump.fun.md",
     "posts/SecondaryDevelopment",
     "posts/Blockchain",
-    "posts/Backend/PostgreSQL.md",
     "assets/Untitled",
     "assets/PostgreSQL/file-2026-01-15-23-07-09-246.png",
     "assets/PostgreSQL",

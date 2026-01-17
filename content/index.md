@@ -31,4 +31,10 @@ Explore my technical notes and articles in the [Posts](posts) section.
 
 > 💡 **View all posts sorted by date**: [Blog Archive →](blog)
 
-[[TO THE SKY]]
+---
+
+## 🌟 Journey & Records
+
+- [[TO THE SKY]] 
+- [[AMONG THE CLOUDS]]
+- [[DOWN TO EARTH]]

@@ -18,8 +18,21 @@
 
 8. **2023年11月**，在Momenta实习，主要做AUTOSAR CP的工具链开发，主要做ARXML生成工具，同时在ISOLAR A/B做完整功能集成，主要写Python和CI相关的内容比较多
 
-9. **2024年9月之后**，在HKU [HKU-CS](https://github.com/Rupert-WLLP-Bai/HKU-CS) 学习主要写AI相关代码，也有IoT相关的代码，ESP32C5，这一时期偏全栈开发，快速实现原型然后组内讨论快速迭代出最终产物
+9. **2024年9月之后**，在HKU [HKU-CS](https://github.com/Rupert-WLLP-Bai/HKU-CS) 完成10门研究生课程，涵盖深度学习、NLP、机器人学和金融科技。主要项目包括：从零实现Word2Vec和完整的语言模型训练流程（Pretraining→SFT→LoRA→DPO），目标检测（DETR/DINO）和NER任务，机器人SLAM和路径规划（EKF/FastSLAM/RRT*），基于DDQN的量化交易系统，以及WiFi CSI呼吸监测的AIoT项目。技术栈横跨PyTorch、Transformers、ESP32边缘AI部署、强化学习和信号处理，这一时期偏全栈开发和快速原型迭代
 
 10. **2025年4月~2025年11月**，仍然保持传统后端技术栈学习，主要语言是C++，Go，Rust
 
 11. **2025年11月~2026年1月**，学习opencode的oh my opencode的多agent组织方式以及claudecode skill，cowork相关内容，学习solana anchor
+
+# Beyond the horizon
+
+- [[MySQL]] - 相关面试题 [JavaGuide-MySQL](https://javaguide.cn/database/mysql/mysql-questions-01.html)
+- [[PostgreSQL]] - Postgres18相关特性探索
+- [[Redis]] - 相关面试题 [JavaGuide-1](https://javaguide.cn/database/redis/redis-questions-01.html) [JavaGuide-2](https://javaguide.cn/database/redis/redis-questions-02.html)
+- [[分布式系统]] - 一致性哈希，Raft，Etcd，TiDB，分布式事务，分布式ID，API网关
+- [[高可用]] - 接口幂等，冗余设计，服务限流，熔断降级，超时重试
+- [[消息队列]] - Kafka
+- [[数据库优化]] - 字段设计，索引设计，索引规范 [JavaGuide](https://javaguide.cn/database/mysql/mysql-high-performance-optimization-specification-recommendations.html)
+- [[Kubernetes]] - 官方文档以及简单实践 [k8s](https://guangzhengli.com/courses/kubernetes)，二次开发，Operator
+- [[Golang]] - Goroutine，1.24版本的map结构，面试题
+- [[C++]] - C++11,14,17,20特性，Conan, cmake ，面试题
