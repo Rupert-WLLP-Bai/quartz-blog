@@ -1,3 +1,15 @@
+---
+title: AMONG THE CLOUDS
+date: 2026-01-17
+tags:
+  - Kubernetes
+  - CloudNative
+  - DevOps
+  - Tools
+  - Learning
+  - OpenSource
+---
+
 1. https://guangzhengli.com/courses/kubernetes 一个简短的k8s教程
 2. https://guangzhengli.com/blog/zh/indie-hacker-tech-stack-2024 独立开发者技术栈推荐
 3. https://guangzhengli.com/blog/zh/indie-hacker-poor-stack 独立开发者云平台推荐(Cloudflare)

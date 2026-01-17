@@ -1,3 +1,20 @@
+---
+title: DOWN TO EARTH
+date: 2026-01-17
+tags:
+  - Planning
+  - TaskManagement
+  - Productivity
+  - Learning
+  - Blog
+---
+
+## 2026-01-18
+
+### TODO
+1. [[SOLSCAN]] - 继续学习SOLSCAN，深入理解Solana区块链浏览器的各个功能模块
+2. [[Multi-Agent 具体应用#oh my opencode]] - 研究oh my opencode的Sisyphus设计模式和ultrawork模式的实现原理
+
 ## 2026-01-17
 
 ### DONE

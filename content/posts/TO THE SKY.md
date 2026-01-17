@@ -1,3 +1,16 @@
+---
+title: TO THE SKY
+date: 2026-01-17
+tags:
+  - Learning
+  - Backend
+  - Cpp
+  - Rust
+  - Golang
+  - Career
+  - Blog
+---
+
 # The very beginning
 
 1. **2020年9月~2021年1月**，大一上学期，学完高程之后，大概了解了怎么用VS，怎么解决头文件的问题，解决菱形继承的问题，用Windows句柄对画图进行操作

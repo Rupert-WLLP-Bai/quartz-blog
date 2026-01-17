@@ -1,3 +1,16 @@
+---
+title: k8s-crawl
+date: 2026-01-17
+tags:
+  - Kubernetes
+  - CloudNative
+  - Docker
+  - DevOps
+  - Containerization
+  - Minikube
+  - Learning
+---
+
 ## GitHub Repo
 ## Phase 1 - 启动
 1. 安装OrbStack，在Mac M系列表现更好
