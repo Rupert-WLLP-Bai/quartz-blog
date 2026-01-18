@@ -2,13 +2,16 @@
 title: Ad Astra Per Aspera
 ---
 
-**Bai Junhao**
-*Backend | Embedded (MCU & SOC) | Distributed Systems | AUTOSAR CP*
-
-## 🛠️ Tech Stack & Focus
-*   **Core**: Backend Development, Distributed Systems
-*   **Languages**: C++, Rust, Golang
-*   **Current Learning**: Solana
+<div class="hero-section">
+  <div class="hero-name">Bai Junhao</div>
+  <div class="hero-subtitle">Backend | Embedded (MCU & SOC) | Distributed Systems | AUTOSAR CP</div>
+  <div class="hero-tech-stack">
+    <span class="tech-badge">C++</span>
+    <span class="tech-badge">Rust</span>
+    <span class="tech-badge">Golang</span>
+    <span class="tech-badge highlight">Solana</span>
+  </div>
+</div>
 
 ## 🎓 Education
 *   **The University of Hong Kong (HKU)**  

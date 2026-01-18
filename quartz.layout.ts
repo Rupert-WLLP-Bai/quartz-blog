@@ -30,9 +30,9 @@ export const defaultContentPageLayout: PageLayout = {
         filter: (page) =>
           page.slug !== "index" &&
           page.slug !== "blog" &&
-          page.slug !== "posts/AMONG THE CLOUDS" &&
-          page.slug !== "posts/DOWN TO EARTH" &&
-          page.slug !== "posts/TO THE SKY"
+          page.slug !== "posts/AMONG-THE-CLOUDS" &&
+          page.slug !== "posts/DOWN-TO-EARTH" &&
+          page.slug !== "posts/TO-THE-SKY"
       }),
       condition: (page) => page.fileData.slug === "index",
     }),
