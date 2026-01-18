@@ -27,7 +27,12 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.RecentNotes({
         title: "Recent Notes",
         limit: 12,
-        filter: (page) => page.slug !== "index" && page.slug !== "blog"
+        filter: (page) =>
+          page.slug !== "index" &&
+          page.slug !== "blog" &&
+          page.slug !== "posts/AMONG THE CLOUDS" &&
+          page.slug !== "posts/DOWN TO EARTH" &&
+          page.slug !== "posts/TO THE SKY"
       }),
       condition: (page) => page.fileData.slug === "index",
     }),
