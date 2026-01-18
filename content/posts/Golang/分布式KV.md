@@ -15,21 +15,7 @@ tags: [Golang, DistributedSystems, KeyValueStore]
 - 持久化层集成 PebbleDB，支持高吞吐写入与压缩优化。引入 Redis 热点缓存，降低高频访问数据的尾延迟。
 - 定期快照压缩（默认每10000条），减少日志回放开销与存储占用。
 - 原生支持 Kubernetes，通过 StatefulSet + Headless Service 实现节点动态注册与服务发现。
-- 支持分区路由 与 Region 分裂 （阈值64MB），实现水平扩展与负载均衡。
-
-## 参考
-
-[TiKV Storage](https://tikv.org/docs/6.1/reference/architecture/storage/)
-
-[TiKV 架构](https://docs.pingcap.com/zh/tidb/stable/rocksdb-overview/)
-
-[Partitioned Raft KV 原理解析](https://cloud.tencent.com/developer/article/2287341)
-
-![TiKV RocksDB](https://docs-download.pingcap.com/media/images/docs-cn/tikv-rocksdb.png)
-
-![Raft in TiKV diagram](https://tikv.org/img/docs/tikv-storage-1.png)
-
-![TiKV Storage diagram](https://tikv.org/img/docs/tikv-storage-3.png)
+- 支持分区路由与 Region 分裂（阈值64MB），实现水平扩展与负载均衡。
 
 ## 问题
 
@@ -405,3 +391,31 @@ Leader 挂掉后由 Raft 选举新 Leader，旧 Leader 恢复后通过加入流�
 
 优势在于结合了 TiKV 的分区设计和 Etcd 的强一致保证，适合高并发、强一致场景。劣势是实现复杂，部分性能尚待优化。
 
+## 参考资料
+
+### 官方文档与架构设计
+- [In Search of an Understandable Consensus Algorithm (Raft Paper)](https://raft.github.io/raft.pdf) - Raft 共识算法论文
+- [The Secret Lives of Data - Raft Visualization](http://thesecretlivesofdata.com/raft/) - Raft 算法可视化演示
+- [TiKV Architecture](https://tikv.org/docs/latest/concepts/architecture/) - TiKV 架构文档
+- [TiKV Storage](https://tikv.org/docs/6.1/reference/architecture/storage/) - TiKV 存储层设计
+- [TiKV RocksDB Overview](https://docs.pingcap.com/zh/tidb/stable/rocksdb-overview/) - TiKV RocksDB 架构
+- [etcd Documentation](https://etcd.io/docs/) - etcd 官方文档
+- [etcd Raft Library](https://github.com/etcd-io/raft) - etcd Raft 实现
+
+### 技术文章与实现
+- [Partitioned Raft KV 原理解析](https://cloud.tencent.com/developer/article/2287341) - 分区 Raft KV 实现
+- [PebbleDB: A RocksDB Inspired Key-Value Store](https://github.com/cockroachdb/pebble) - PebbleDB 项目
+- [Kubernetes StatefulSet Best Practices](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/) - K8s 有状态应用部署
+- [Raft Consensus Algorithm Explained](https://raft.github.io/) - Raft 算法详解
+
+### 系统设计与书籍
+- [Designing Data-Intensive Applications](https://dataintensive.net/) - 数据密集型应用设计（书籍）
+- [Distributed Systems for Fun and Profit](http://book.mixu.net/distsys/) - 分布式系统入门
+- [CockroachDB Architecture](https://www.cockroachlabs.com/docs/stable/architecture/overview.html) - CockroachDB 架构设计
+
+### 架构图示
+![TiKV RocksDB](https://docs-download.pingcap.com/media/images/docs-cn/tikv-rocksdb.png)
+
+![Raft in TiKV diagram](https://tikv.org/img/docs/tikv-storage-1.png)
+
+![TiKV Storage diagram](https://tikv.org/img/docs/tikv-storage-3.png)

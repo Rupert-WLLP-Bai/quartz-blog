@@ -112,7 +112,7 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
               "last-modified",
             ])
             if (modified) data.modified = modified
-            data.modified ||= created // if modified is not set, use created
+            // Don't fallback to created here - let lastmod plugin handle it from git/filesystem
 
             const published = coalesceAliases(data, ["published", "publishDate", "date"])
             if (published) data.published = published
