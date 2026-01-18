@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a021926881edf9e4",
+        "id": "5938a621f68922ad",
         "type": "tabs",
         "children": [
           {
-            "id": "2f8f889eedadd052",
+            "id": "b9eab0951e6f487f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Blockchain/SOLSCAN.md",
+                "file": "posts/Productivity/Multi-Agent 具体应用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SOLSCAN"
+              "title": "Multi-Agent 具体应用"
             }
           }
         ]
@@ -181,11 +181,17 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "2f8f889eedadd052",
+  "active": "b9eab0951e6f487f",
   "lastOpenFiles": [
-    "posts/AMONG THE CLOUDS.md",
-    "posts/Blockchain/SOLSCAN.md",
+    "assets/Multi-Agent 具体应用/file-2026-01-18-12-16-28-853.png",
+    "assets/Multi-Agent 具体应用/file-2026-01-18-12-06-58-557.png",
+    "assets/Multi-Agent 具体应用/Gemini_Generated_Image_7k2nvh7k2nvh7k2n.png",
+    "assets/Multi-Agent 具体应用",
     "posts/DOWN TO EARTH.md",
+    "posts/AMONG THE CLOUDS.md",
+    "posts/Productivity/Multi-Agent 具体应用.md",
+    "posts/Java/Java.md",
+    "posts/Blockchain/SOLSCAN.md",
     "posts/TO THE SKY.md",
     "index.md",
     "blog.md",
@@ -207,14 +213,11 @@
     "assets/C++/file-2026-01-17-20-43-48-304.png",
     "assets/C++",
     "posts/Embedded/CMake.md",
-    "posts/Productivity/Multi-Agent 具体应用.md",
     "posts/Productivity",
     "posts/Recruitment/6-18-联洲-嵌入式-提前批-一面.md",
     "posts/Recruitment/6-11-腾讯-CSIG-运营开发-暑期实习-一面.md",
     "posts/Recruitment/6-24-联洲-嵌入式-提前批-二面.md",
     "posts/Golang/分布式KV.md",
-    "posts/Academic/HKU-CS-Dissertation.md",
-    "posts/Academic/数学建模-Python.md",
     "posts/SecondaryDevelopment",
     "posts/Blockchain",
     "assets/Untitled",
