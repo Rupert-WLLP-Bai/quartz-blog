@@ -3,7 +3,10 @@ title: AIClient Secondary Development - API Features
 date: 2026-01-16
 tags: [SecondaryDevelopment, API, Golang, WebDevelopment, Analytics]
 ---
-
+## TODO
+### 2026.01.18
+ 1. 设计更好的插件式架构，每次合并main分支的时候可以最少的处理冲突
+ 2. 设计如何集成Minimax M2.1和GLM4.7，同样采用LRU轮询
 ## 二次开发功能
 
 ### 1. Kiro 账号剩余额度查询
