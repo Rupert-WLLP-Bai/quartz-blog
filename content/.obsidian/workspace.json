@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2d5d04f605173377",
+        "id": "1d15cace6b93c385",
         "type": "tabs",
         "children": [
           {
-            "id": "306e681a1c2dec12",
+            "id": "cf4f3de93edfc534",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/DOWN TO EARTH.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "DOWN TO EARTH"
+              "title": "New tab"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:自动化",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -181,13 +177,18 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "306e681a1c2dec12",
+  "active": "cf4f3de93edfc534",
   "lastOpenFiles": [
-    "posts/AMONG THE CLOUDS.md",
+    "posts/SecondaryDevelopment/AWS Builder ID 自动化注册技术总结.md",
     "posts/SecondaryDevelopment/AWS Builder ID 二次开发.md",
-    "提取结果_1768723233725.txt",
+    "posts/SecondaryDevelopment/AWS Builder ID 完整自动化链路实现.md",
+    "posts/SecondaryDevelopment/Kiro 注册机.md",
+    "posts/SecondaryDevelopment/sysmaster-systemd-parser.md",
+    "posts/SecondaryDevelopment/AIClient-2-API.md",
     "posts/DOWN TO EARTH.md",
+    "posts/AMONG THE CLOUDS.md",
     "posts/TO THE SKY.md",
+    "提取结果_1768723233725.txt",
     "blog.md",
     "posts/Blockchain/SOLSCAN.md",
     "assets/SOLSCAN/file-2026-01-18-15-03-18-506.png",
@@ -195,8 +196,6 @@
     "posts/Rust/Rust-Roadmap.md",
     "posts/Rust/Rust-Course.md",
     "posts/Rust/使用Rust实现systemd配置文件解析工具.md",
-    "posts/SecondaryDevelopment/sysmaster-systemd-parser.md",
-    "posts/SecondaryDevelopment/AIClient-2-API.md",
     "posts/Embedded/基于ESP32-C5的无线感知系统.md",
     "posts/Golang/秒杀系统.md",
     "posts/Golang/分布式KV.md",
@@ -213,8 +212,6 @@
     "posts/Backend/数据库优化.md",
     "posts/Backend/Redis.md",
     "posts/Backend/MySQL.md",
-    "posts/Backend/Nginx.md",
-    "posts/Backend/PicX图床.md",
     "assets/AIClient-2-API/file-2026-01-17-21-26-20-688.png",
     "assets/AIClient-2-API/file-2026-01-17-21-25-55-599.png",
     "assets/AIClient-2-API",

@@ -1,7 +1,12 @@
 ---
 title: Sysmaster Systemd Parser
 date: 2026-01-16
-tags: [SecondaryDevelopment, Rust, Linux, OpenSource, SystemD]
+tags:
+  - secondary-development
+  - rust
+  - linux
+  - open-source
+  - systemd
 ---
 ## Standalone Version
 ### 项目背景及要求

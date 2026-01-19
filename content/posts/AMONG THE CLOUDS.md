@@ -21,4 +21,6 @@ tags:
 9. https://www.youtube.com/watch?v=1LUY_5lPB4I How to Track New Pools Created on Solana Raydium DEX
 ## 2026.01.18
 1. https://github.com/7836246/aws-builder-id AWS Builder ID 注册机 可用性存疑
-2. 
+## 2026-01-19
+1. https://github.com/login?return_to=%2Fnguyenphutrong%2Fquotio macOS 多AI账号管理器
+2. https://github.com/Pluviobyte/Kiro-auto-register kiro自动注册

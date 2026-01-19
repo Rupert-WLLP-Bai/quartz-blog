@@ -1,7 +1,12 @@
 ---
 title: AIClient Secondary Development - API Features
 date: 2026-01-16
-tags: [SecondaryDevelopment, API, Golang, WebDevelopment, Analytics]
+tags:
+  - secondary-development
+  - api
+  - golang
+  - web-development
+  - analytics
 ---
 ## TODO
 ### 2026.01.18

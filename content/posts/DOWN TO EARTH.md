@@ -10,8 +10,18 @@ tags:
 ---
 ## 2026-01-19
 ### TODO
-1. [[AWS Builder ID 二次开发]] Robust
+1. [[AWS Builder ID 二次开发]] Robust，结合[[Kiro 注册机]]的基础代码继续开发
 2. [[SOLSCAN]] 继续探索其他函数组合使用
+3. 探索多agent场景下 日志输出帮助agent进行调试的方式 (重定向 结合 tail -f) 或者更高级的方式
+4. Outlook，AWS网站的登录验证逻辑，返回给用户的参数有哪些，作用是什么
+5. 浏览器headless是怎么做的，undetected chrome是怎么做的，指纹保护是什么，为什么playwright会被检测，替代方案有什么
+6. npm run tauri dev 热重载 编译错误不会退出
+7. 考虑怎么联动kiro manager
+8. 为什么用rust做headless chrome，为什么这样不会被检测
+9. Bun的设计 和npm对比 查看文档
+### DONE
+1. [[AWS Builder ID 完整自动化链路实现]] 完全实现一个patch版本 整合了市面上的开源工具
+2. [[AWS Builder ID 自动化注册技术总结]] Claude总结的实现过程与常见问题
 ## 2026-01-18
 
 ### TODO
