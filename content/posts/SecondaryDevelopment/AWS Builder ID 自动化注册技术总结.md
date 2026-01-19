@@ -257,7 +257,7 @@ Token刷新失败 --> 标记不健康
 
 flowchart LR
 subgraph "输入"
-A[邮箱列表] --> B[邮箱|密码|refresh_token|client_id]
+A[邮箱列表] --> B["邮箱|密码|refresh_token|client_id"]
 end
 subgraph "注册流程"
 B --> C[OAuth 授权]
@@ -327,23 +327,19 @@ POST https://login.microsoftonline.com/consumers/oauth2/v2.0/devicecode
 **返回参数**：
 
 ```json
-
 {
+  "device_code": "BAQABAAEAAAAm-06blBE1TpVMil8KPQ41...",
 
-"device_code": "BAQABAAEAAAAm-06blBE1TpVMil8KPQ41...",
+  "user_code": "ABCD1234",
 
-"user_code": "ABCD1234",
+  "verification_uri": "https://microsoft.com/devicelogin",
 
-"verification_uri": "https://microsoft.com/devicelogin",
+  "expires_in": 900,
 
-"expires_in": 900,
+  "interval": 5,
 
-"interval": 5,
-
-"message": "To sign in, use a web browser to open the page..."
-
+  "message": "To sign in, use a web browser to open the page..."
 }
-
 ```
 
 **参数说明**：
@@ -391,21 +387,17 @@ POST https://login.microsoftonline.com/consumers/oauth2/v2.0/token
 **返回参数（授权成功）**：
 
 ```json
-
 {
+  "token_type": "Bearer",
 
-"token_type": "Bearer",
+  "scope": "Mail.Read offline_access",
 
-"scope": "Mail.Read offline_access",
+  "expires_in": 3600,
 
-"expires_in": 3600,
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGc...",
 
-"access_token": "eyJ0eXAiOiJKV1QiLCJhbGc...",
-
-"refresh_token": "M.C509_SN1.2.U.-CqgBa..."
-
+  "refresh_token": "M.C509_SN1.2.U.-CqgBa..."
 }
-
 ```
 
 **参数说明**：
@@ -421,29 +413,21 @@ POST https://login.microsoftonline.com/consumers/oauth2/v2.0/token
 **返回参数（等待授权）**：
 
 ```json
-
 {
+  "error": "authorization_pending",
 
-"error": "authorization_pending",
-
-"error_description": "User has not yet completed authorization"
-
+  "error_description": "User has not yet completed authorization"
 }
-
 ```
 
 **返回参数（授权超时）**：
 
 ```json
-
 {
+  "error": "expired_token",
 
-"error": "expired_token",
-
-"error_description": "The device code has expired"
-
+  "error_description": "The device code has expired"
 }
-
 ```
 
 #### 4. 刷新 Access Token
@@ -475,21 +459,17 @@ POST https://login.microsoftonline.com/common/oauth2/v2.0/token
 **返回参数**：
 
 ```json
-
 {
+  "token_type": "Bearer",
 
-"token_type": "Bearer",
+  "scope": "Mail.Read offline_access",
 
-"scope": "Mail.Read offline_access",
+  "expires_in": 3600,
 
-"expires_in": 3600,
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGc...",
 
-"access_token": "eyJ0eXAiOiJKV1QiLCJhbGc...",
-
-"refresh_token": "M.C509_SN1.2.U.-CqgBa..."
-
+  "refresh_token": "M.C509_SN1.2.U.-CqgBa..."
 }
-
 ```
 
 ### 获取邮箱验证码
@@ -529,45 +509,31 @@ Authorization: Bearer {access_token}
 **返回参数**：
 
 ```json
-
 {
+  "value": [
+    {
+      "id": "AAMkAGI...",
 
-"value": [
+      "subject": "AWS Builder ID verification code",
 
-{
+      "from": {
+        "emailAddress": {
+          "address": "no-reply@signin.aws",
 
-"id": "AAMkAGI...",
+          "name": "AWS"
+        }
+      },
 
-"subject": "AWS Builder ID verification code",
+      "receivedDateTime": "2026-01-19T10:30:00Z",
 
-"from": {
+      "body": {
+        "contentType": "html",
 
-"emailAddress": {
-
-"address": "no-reply@signin.aws",
-
-"name": "AWS"
-
+        "content": "<html>Your verification code is: 123456</html>"
+      }
+    }
+  ]
 }
-
-},
-
-"receivedDateTime": "2026-01-19T10:30:00Z",
-
-"body": {
-
-"contentType": "html",
-
-"content": "<html>Your verification code is: 123456</html>"
-
-}
-
-}
-
-]
-
-}
-
 ```
 
 ### 关键参数总结
@@ -629,29 +595,21 @@ POST https://profile.aws.amazon.com/api/register
 **请求参数**：
 
 ```json
-
 {
+  "email": "user@example.com",
 
-"email": "user@example.com",
-
-"locale": "en_US"
-
+  "locale": "en_US"
 }
-
 ```
 
 **返回参数**：
 
 ```json
-
 {
+  "sessionId": "abc123...",
 
-"sessionId": "abc123...",
-
-"status": "VERIFICATION_CODE_SENT"
-
+  "status": "VERIFICATION_CODE_SENT"
 }
-
 ```
 
 **参数说明**：
@@ -673,29 +631,21 @@ POST https://profile.aws.amazon.com/api/verify
 **请求参数**：
 
 ```json
-
 {
+  "sessionId": "abc123...",
 
-"sessionId": "abc123...",
-
-"verificationCode": "123456"
-
+  "verificationCode": "123456"
 }
-
 ```
 
 **返回参数**：
 
 ```json
-
 {
+  "status": "VERIFIED",
 
-"status": "VERIFIED",
-
-"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
-
 ```
 
 **参数说明**：
@@ -717,31 +667,23 @@ POST https://profile.aws.amazon.com/api/complete
 **请求参数**：
 
 ```json
-
 {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
 
-"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "firstName": "John",
 
-"firstName": "John",
-
-"lastName": "Doe"
-
+  "lastName": "Doe"
 }
-
 ```
 
 **返回参数**：
 
 ```json
-
 {
+  "builderId": "arn:aws:iam::123456789012:user/john.doe",
 
-"builderId": "arn:aws:iam::123456789012:user/john.doe",
-
-"status": "COMPLETED"
-
+  "status": "COMPLETED"
 }
-
 ```
 
 ### 浏览器自动化关键点
@@ -751,7 +693,6 @@ POST https://profile.aws.amazon.com/api/complete
 #### 1. 页面元素定位
 
 ```typescript
-
 // 等待邮箱输入框出现
 
 await page.waitForSelector('input[type="email"]', { timeout: 30000 })
@@ -763,13 +704,11 @@ await page.type('input[type="email"]', email)
 // 点击继续按钮
 
 await page.click('button[type="submit"]')
-
 ```
 
 #### 2. 验证码输入
 
 ```typescript
-
 // 等待验证码输入框
 
 await page.waitForSelector('input[name="verificationCode"]')
@@ -781,55 +720,40 @@ const code = await getVerificationCodeFromEmail(email)
 // 输入验证码
 
 await page.type('input[name="verificationCode"]', code)
-
 ```
 
 #### 3. 处理页面跳转和加载
 
 ```typescript
-
 // 等待导航完成
 
 await Promise.all([
+  page.waitForNavigation({ waitUntil: "networkidle2" }),
 
-page.waitForNavigation({ waitUntil: 'networkidle2' }),
-
-page.click('button[type="submit"]')
-
+  page.click('button[type="submit"]'),
 ])
 
 // 等待特定元素出现，确认页面加载完成
 
-await page.waitForSelector('.success-message', { timeout: 10000 })
-
+await page.waitForSelector(".success-message", { timeout: 10000 })
 ```
 
 #### 4. 错误处理
 
 ```typescript
-
 try {
+  await page.waitForSelector(".error-message", { timeout: 2000 })
 
-await page.waitForSelector('.error-message', { timeout: 2000 })
+  const errorText = await page.$eval(".error-message", (el) => el.textContent)
 
-const errorText = await page.$eval('.error-message', el => el.textContent)
-
-throw new Error(`注册失败: ${errorText}`)
-
+  throw new Error(`注册失败: ${errorText}`)
 } catch (error) {
-
-if (error.name === 'TimeoutError') {
-
-// 没有错误消息，继续执行
-
-} else {
-
-throw error
-
+  if (error.name === "TimeoutError") {
+    // 没有错误消息，继续执行
+  } else {
+    throw error
+  }
 }
-
-}
-
 ```
 
 ### 验证码获取策略
@@ -849,31 +773,29 @@ throw error
 **实现**：
 
 ```typescript
+async function getCodeOffline(
+  email: string,
+  refreshToken: string,
+  clientId: string,
+): Promise<string> {
+  // 1. 刷新 access_token
 
-async function getCodeOffline(email: string, refreshToken: string, clientId: string): Promise<string> {
+  const accessToken = await refreshAccessToken(refreshToken, clientId)
 
-// 1. 刷新 access_token
+  // 2. 获取最新邮件
 
-const accessToken = await refreshAccessToken(refreshToken, clientId)
+  const messages = await fetchRecentMessages(accessToken, "no-reply@signin.aws")
 
-// 2. 获取最新邮件
+  // 3. 提取验证码
 
-const messages = await fetchRecentMessages(accessToken, 'no-reply@signin.aws')
+  for (const message of messages) {
+    const code = extractVerificationCode(message.body.content)
 
-// 3. 提取验证码
+    if (code) return code
+  }
 
-for (const message of messages) {
-
-const code = extractVerificationCode(message.body.content)
-
-if (code) return code
-
+  throw new Error("未找到验证码")
 }
-
-throw new Error('未找到验证码')
-
-}
-
 ```
 
 #### 2. 在线获取（Puppeteer 登录邮箱）
@@ -893,71 +815,55 @@ throw new Error('未找到验证码')
 ### 验证码提取正则表达式
 
 ```typescript
-
 const CODE_PATTERNS = [
+  /verification code is[：:\s]*(\d{6})/gi,
 
-/verification code is[：:\s]*(\d{6})/gi,
+  /(?:verification\s*code|验证码|Your code is|code is)[：:\s]*(\d{6})/gi,
 
-/(?:verification\s*code|验证码|Your code is|code is)[：:\s]*(\d{6})/gi,
+  /(?:is|为)[：:\s]*(\d{6})\b/gi,
 
-/(?:is|为)[：:\s]*(\d{6})\b/gi,
+  /^\s*(\d{6})\s*$/gm, // 单独一行的6位数字
 
-/^\s*(\d{6})\s*$/gm, // 单独一行的6位数字
-
-/>\s*(\d{6})\s*</g // HTML标签之间的6位数字
-
+  />\s*(\d{6})\s*</g, // HTML标签之间的6位数字
 ]
 
 function extractVerificationCode(html: string): string | null {
+  const text = htmlToText(html)
 
-const text = htmlToText(html)
+  for (const pattern of CODE_PATTERNS) {
+    const matches = text.matchAll(pattern)
 
-for (const pattern of CODE_PATTERNS) {
+    for (const match of matches) {
+      const code = match[1]
 
-const matches = text.matchAll(pattern)
+      if (/^\d{6}$/.test(code)) {
+        return code
+      }
+    }
+  }
 
-for (const match of matches) {
-
-const code = match[1]
-
-if (/^\d{6}$/.test(code)) {
-
-return code
-
+  return null
 }
-
-}
-
-}
-
-return null
-
-}
-
 ```
 
 ### AWS 验证码发件人列表
 
 ```typescript
-
 const AWS_SENDERS = [
+  "no-reply@signin.aws", // AWS 新发件人（2024年后）
 
-'no-reply@signin.aws', // AWS 新发件人（2024年后）
+  "no-reply@login.awsapps.com",
 
-'no-reply@login.awsapps.com',
+  "noreply@amazon.com",
 
-'noreply@amazon.com',
+  "account-update@amazon.com",
 
-'account-update@amazon.com',
+  "no-reply@aws.amazon.com",
 
-'no-reply@aws.amazon.com',
+  "noreply@aws.amazon.com",
 
-'noreply@aws.amazon.com',
-
-'aws' // 模糊匹配
-
+  "aws", // 模糊匹配
 ]
-
 ```
 
 ### 关键参数总结
@@ -1029,29 +935,21 @@ POST https://oidc.{region}.amazonaws.com/token
 **请求参数**：
 
 ```json
-
 {
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
 
-"refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-
-"region": "us-east-1"
-
+  "region": "us-east-1"
 }
-
 ```
 
 **返回参数**：
 
 ```json
-
 {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
 
-"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-
-"expiresIn": 3600
-
+  "expiresIn": 3600
 }
-
 ```
 
 #### 2. 生成响应端点
@@ -1089,35 +987,25 @@ Content-Type: application/json
 **请求参数**：
 
 ```json
-
 {
+  "conversationState": {
+    "conversationId": "uuid-v4",
 
-"conversationState": {
+    "history": [],
 
-"conversationId": "uuid-v4",
+    "currentMessage": {
+      "userInputMessage": {
+        "content": "Hello, Claude!"
+      }
+    },
 
-"history": [],
+    "chatTriggerType": "MANUAL"
+  },
 
-"currentMessage": {
+  "profileArn": "arn:aws:iam::123456789012:user/john.doe",
 
-"userInputMessage": {
-
-"content": "Hello, Claude!"
-
+  "modelName": "CLAUDE_SONNET_4_5_20250929_V1_0"
 }
-
-},
-
-"chatTriggerType": "MANUAL"
-
-},
-
-"profileArn": "arn:aws:iam::123456789012:user/john.doe",
-
-"modelName": "CLAUDE_SONNET_4_5_20250929_V1_0"
-
-}
-
 ```
 
 ### 模型映射
@@ -1125,25 +1013,21 @@ Content-Type: application/json
 Kiro 使用特殊的模型名称格式，需要进行映射：
 
 ```javascript
-
 const MODEL_MAPPING = {
+  "claude-opus-4-5": "claude-opus-4.5",
 
-"claude-opus-4-5": "claude-opus-4.5",
+  "claude-opus-4-5-20251101": "claude-opus-4.5",
 
-"claude-opus-4-5-20251101": "claude-opus-4.5",
+  "claude-haiku-4-5": "claude-haiku-4.5",
 
-"claude-haiku-4-5": "claude-haiku-4.5",
+  "claude-sonnet-4-5": "CLAUDE_SONNET_4_5_20250929_V1_0",
 
-"claude-sonnet-4-5": "CLAUDE_SONNET_4_5_20250929_V1_0",
+  "claude-sonnet-4-5-20250929": "CLAUDE_SONNET_4_5_20250929_V1_0",
 
-"claude-sonnet-4-5-20250929": "CLAUDE_SONNET_4_5_20250929_V1_0",
+  "claude-sonnet-4-20250514": "CLAUDE_SONNET_4_20250514_V1_0",
 
-"claude-sonnet-4-20250514": "CLAUDE_SONNET_4_20250514_V1_0",
-
-"claude-3-7-sonnet-20250219": "CLAUDE_3_7_SONNET_20250219_V1_0"
-
+  "claude-3-7-sonnet-20250219": "CLAUDE_3_7_SONNET_20250219_V1_0",
 }
-
 ```
 
 **注意**：
@@ -1265,43 +1149,31 @@ AIClient-2-API 使用凭证池管理多个 Kiro 账号：
 使用 `CredentialCacheManager` 缓存 access_token：
 
 ```javascript
-
 class CredentialCacheManager {
+  constructor() {
+    this.cache = new Map()
+  }
 
-constructor() {
+  set(key, accessToken, expiresIn) {
+    const expiresAt = Date.now() + (expiresIn - 60) * 1000 // 提前60秒过期
 
-this.cache = new Map()
+    this.cache.set(key, { accessToken, expiresAt })
+  }
 
+  get(key) {
+    const cached = this.cache.get(key)
+
+    if (!cached) return null
+
+    if (Date.now() >= cached.expiresAt) {
+      this.cache.delete(key)
+
+      return null
+    }
+
+    return cached.accessToken
+  }
 }
-
-set(key, accessToken, expiresIn) {
-
-const expiresAt = Date.now() + (expiresIn - 60) * 1000 // 提前60秒过期
-
-this.cache.set(key, { accessToken, expiresAt })
-
-}
-
-get(key) {
-
-const cached = this.cache.get(key)
-
-if (!cached) return null
-
-if (Date.now() >= cached.expiresAt) {
-
-this.cache.delete(key)
-
-return null
-
-}
-
-return cached.accessToken
-
-}
-
-}
-
 ```
 
 ### 错误处理
@@ -1309,27 +1181,21 @@ return cached.accessToken
 #### 1. 凭证错误
 
 ```javascript
-
 class CredentialError extends Error {
+  constructor(message, options = {}) {
+    super(message)
 
-constructor(message, options = {}) {
+    this.name = "CredentialError"
 
-super(message)
+    this.shouldSwitchCredential = options.shouldSwitchCredential ?? false
 
-this.name = 'CredentialError'
+    this.skipErrorCount = options.skipErrorCount ?? false
 
-this.shouldSwitchCredential = options.shouldSwitchCredential ?? false
+    this.credentialMarkedUnhealthy = options.credentialMarkedUnhealthy ?? false
 
-this.skipErrorCount = options.skipErrorCount ?? false
-
-this.credentialMarkedUnhealthy = options.credentialMarkedUnhealthy ?? false
-
-this.statusCode = options.statusCode
-
+    this.statusCode = options.statusCode
+  }
 }
-
-}
-
 ```
 
 **错误类型**：
@@ -1345,31 +1211,21 @@ this.statusCode = options.statusCode
 #### 2. 重试机制
 
 ```javascript
-
 async function retryWithExponentialBackoff(fn, maxRetries = 3) {
+  for (let i = 0; i < maxRetries; i++) {
+    try {
+      return await fn()
+    } catch (error) {
+      if (i === maxRetries - 1) throw error
 
-for (let i = 0; i < maxRetries; i++) {
+      if (!isRetryableNetworkError(error)) throw error
 
-try {
+      const delay = Math.min(1000 * Math.pow(2, i), 10000)
 
-return await fn()
-
-} catch (error) {
-
-if (i === maxRetries - 1) throw error
-
-if (!isRetryableNetworkError(error)) throw error
-
-const delay = Math.min(1000 * Math.pow(2, i), 10000)
-
-await new Promise(resolve => setTimeout(resolve, delay))
-
+      await new Promise((resolve) => setTimeout(resolve, delay))
+    }
+  }
 }
-
-}
-
-}
-
 ```
 
 ### 统计与监控
@@ -1415,25 +1271,17 @@ AIClient-2-API 记录每个请求的详细信息：
 定期检查凭证健康状态：
 
 ```javascript
-
 async function checkCredentialHealth(credential) {
+  try {
+    const accessToken = await refreshToken(credential)
 
-try {
+    const response = await testRequest(accessToken)
 
-const accessToken = await refreshToken(credential)
-
-const response = await testRequest(accessToken)
-
-return response.ok
-
-} catch (error) {
-
-return false
-
+    return response.ok
+  } catch (error) {
+    return false
+  }
 }
-
-}
-
 ```
 
 ### 关键参数总结
@@ -1487,55 +1335,39 @@ return false
 **最佳实践**：
 
 ```typescript
-
 // 实现指数退避的轮询机制
 
 async function pollForToken(deviceCode: string, interval: number = 5): Promise<TokenResponse> {
+  const maxAttempts = 180 // 15分钟超时
 
-const maxAttempts = 180 // 15分钟超时
+  let attempts = 0
 
-let attempts = 0
+  while (attempts < maxAttempts) {
+    await new Promise((resolve) => setTimeout(resolve, interval * 1000))
 
-while (attempts < maxAttempts) {
+    try {
+      const response = await requestToken(deviceCode)
 
-await new Promise(resolve => setTimeout(resolve, interval * 1000))
+      return response
+    } catch (error) {
+      if (error.error === "authorization_pending") {
+        attempts++
 
-try {
+        continue
+      } else if (error.error === "slow_down") {
+        interval += 5 // 增加轮询间隔
 
-const response = await requestToken(deviceCode)
+        attempts++
 
-return response
+        continue
+      } else {
+        throw error
+      }
+    }
+  }
 
-} catch (error) {
-
-if (error.error === 'authorization_pending') {
-
-attempts++
-
-continue
-
-} else if (error.error === 'slow_down') {
-
-interval += 5 // 增加轮询间隔
-
-attempts++
-
-continue
-
-} else {
-
-throw error
-
+  throw new Error("授权超时")
 }
-
-}
-
-}
-
-throw new Error('授权超时')
-
-}
-
 ```
 
 ### 2. Microsoft Graph API 邮件获取
@@ -1553,29 +1385,22 @@ throw new Error('授权超时')
 **最佳实践**：
 
 ```typescript
-
 // 构建精确的过滤条件
 
 const filter = [
+  `from/emailAddress/address eq 'no-reply@signin.aws'`,
 
-`from/emailAddress/address eq 'no-reply@signin.aws'`,
+  `receivedDateTime ge ${new Date(Date.now() - 5 * 60 * 1000).toISOString()}`, // 最近5分钟
 
-`receivedDateTime ge ${new Date(Date.now() - 5 * 60 * 1000).toISOString()}`, // 最近5分钟
+  `subject contains 'verification'`,
+].join(" and ")
 
-`subject contains 'verification'`
-
-].join(' and ')
-
-const url = `https://graph.microsoft.com/v1.0/me/messages?` +
-
-`$filter=${encodeURIComponent(filter)}&` +
-
-`$orderby=receivedDateTime desc&` +
-
-`$top=10&` +
-
-`$select=subject,body,from,receivedDateTime`
-
+const url =
+  `https://graph.microsoft.com/v1.0/me/messages?` +
+  `$filter=${encodeURIComponent(filter)}&` +
+  `$orderby=receivedDateTime desc&` +
+  `$top=10&` +
+  `$select=subject,body,from,receivedDateTime`
 ```
 
 ### 3. Puppeteer 浏览器自动化
@@ -1593,25 +1418,20 @@ const url = `https://graph.microsoft.com/v1.0/me/messages?` +
 **最佳实践**：
 
 ```typescript
-
 // 启动浏览器时的配置
 
 const browser = await puppeteer.launch({
+  headless: false, // 开发时使用 false，生产使用 true
 
-headless: false, // 开发时使用 false，生产使用 true
+  args: [
+    "--no-sandbox",
 
-args: [
+    "--disable-setuid-sandbox",
 
-'--no-sandbox',
+    "--disable-blink-features=AutomationControlled", // 隐藏自动化特征
 
-'--disable-setuid-sandbox',
-
-'--disable-blink-features=AutomationControlled', // 隐藏自动化特征
-
-'--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)...'
-
-]
-
+    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)...",
+  ],
 })
 
 // 设置真实的 viewport
@@ -1621,15 +1441,12 @@ await page.setViewport({ width: 1920, height: 1080 })
 // 注入脚本隐藏 webdriver 特征
 
 await page.evaluateOnNewDocument(() => {
-
-Object.defineProperty(navigator, 'webdriver', { get: () => false })
-
+  Object.defineProperty(navigator, "webdriver", { get: () => false })
 })
 
 // 模拟人类输入速度
 
 await page.type('input[type="email"]', email, { delay: 100 })
-
 ```
 
 ### 4. 验证码提取策略
@@ -1647,57 +1464,45 @@ await page.type('input[type="email"]', email, { delay: 100 })
 **最佳实践**：
 
 ```typescript
-
 function extractVerificationCode(html: string): string | null {
+  // 1. HTML 转文本
 
-// 1. HTML 转文本
+  const text = htmlToText(html)
 
-const text = htmlToText(html)
+  // 2. 按优先级尝试多种模式
 
-// 2. 按优先级尝试多种模式
+  const patterns = [
+    /verification code is[：:\s]*(\d{6})/gi, // 明确的验证码标识
 
-const patterns = [
+    /(?:code|验证码)[：:\s]*(\d{6})/gi, // 通用模式
 
-/verification code is[：:\s]*(\d{6})/gi, // 明确的验证码标识
+    /^\s*(\d{6})\s*$/gm, // 单独一行
 
-/(?:code|验证码)[：:\s]*(\d{6})/gi, // 通用模式
+    />\s*(\d{6})\s*</g, // HTML 标签之间
+  ]
 
-/^\s*(\d{6})\s*$/gm, // 单独一行
+  const candidates = []
 
-/>\s*(\d{6})\s*</g // HTML 标签之间
+  for (const pattern of patterns) {
+    const matches = text.matchAll(pattern)
 
-]
+    for (const match of matches) {
+      const code = match[1]
 
-const candidates = []
+      if (/^\d{6}$/.test(code)) {
+        candidates.push({ code, priority: patterns.indexOf(pattern) })
+      }
+    }
+  }
 
-for (const pattern of patterns) {
+  // 3. 返回优先级最高的验证码
 
-const matches = text.matchAll(pattern)
+  if (candidates.length === 0) return null
 
-for (const match of matches) {
+  candidates.sort((a, b) => a.priority - b.priority)
 
-const code = match[1]
-
-if (/^\d{6}$/.test(code)) {
-
-candidates.push({ code, priority: patterns.indexOf(pattern) })
-
+  return candidates[0].code
 }
-
-}
-
-}
-
-// 3. 返回优先级最高的验证码
-
-if (candidates.length === 0) return null
-
-candidates.sort((a, b) => a.priority - b.priority)
-
-return candidates[0].code
-
-}
-
 ```
 
 ### 5. 凭证池管理
@@ -1715,69 +1520,51 @@ return candidates[0].code
 **最佳实践**：
 
 ```typescript
-
 class CredentialPoolManager {
+  constructor(credentials) {
+    this.credentials = credentials
 
-constructor(credentials) {
+    this.currentIndex = 0
 
-this.credentials = credentials
+    this.healthStatus = new Map()
 
-this.currentIndex = 0
+    this.cache = new CredentialCacheManager()
+  }
 
-this.healthStatus = new Map()
+  async getNextHealthyCredential() {
+    const startIndex = this.currentIndex
 
-this.cache = new CredentialCacheManager()
+    do {
+      const credential = this.credentials[this.currentIndex]
 
+      this.currentIndex = (this.currentIndex + 1) % this.credentials.length
+
+      // 检查健康状态
+
+      if (this.healthStatus.get(credential.uuid) === false) {
+        continue
+      }
+
+      return credential
+    } while (this.currentIndex !== startIndex)
+
+    throw new Error("没有可用的健康凭证")
+  }
+
+  markUnhealthy(uuid) {
+    this.healthStatus.set(uuid, false)
+
+    console.log(`凭证 ${uuid} 已标记为不健康`)
+  }
+
+  async refreshHealthStatus() {
+    for (const credential of this.credentials) {
+      const isHealthy = await this.checkHealth(credential)
+
+      this.healthStatus.set(credential.uuid, isHealthy)
+    }
+  }
 }
-
-async getNextHealthyCredential() {
-
-const startIndex = this.currentIndex
-
-do {
-
-const credential = this.credentials[this.currentIndex]
-
-this.currentIndex = (this.currentIndex + 1) % this.credentials.length
-
-// 检查健康状态
-
-if (this.healthStatus.get(credential.uuid) === false) {
-
-continue
-
-}
-
-return credential
-
-} while (this.currentIndex !== startIndex)
-
-throw new Error('没有可用的健康凭证')
-
-}
-
-markUnhealthy(uuid) {
-
-this.healthStatus.set(uuid, false)
-
-console.log(`凭证 ${uuid} 已标记为不健康`)
-
-}
-
-async refreshHealthStatus() {
-
-for (const credential of this.credentials) {
-
-const isHealthy = await this.checkHealth(credential)
-
-this.healthStatus.set(credential.uuid, isHealthy)
-
-}
-
-}
-
-}
-
 ```
 
 ### 6. 错误处理与重试
@@ -1795,83 +1582,55 @@ this.healthStatus.set(credential.uuid, isHealthy)
 **最佳实践**：
 
 ```typescript
-
 // 可重试的错误类型
 
-const RETRYABLE_ERRORS = [
-
-'ECONNRESET',
-
-'ETIMEDOUT',
-
-'ENOTFOUND',
-
-'ECONNREFUSED'
-
-]
+const RETRYABLE_ERRORS = ["ECONNRESET", "ETIMEDOUT", "ENOTFOUND", "ECONNREFUSED"]
 
 const RETRYABLE_STATUS_CODES = [408, 429, 500, 502, 503, 504]
 
 function isRetryableError(error) {
+  // 网络错误
 
-// 网络错误
+  if (RETRYABLE_ERRORS.includes(error.code)) return true
 
-if (RETRYABLE_ERRORS.includes(error.code)) return true
+  // HTTP 状态码
 
-// HTTP 状态码
+  if (error.response && RETRYABLE_STATUS_CODES.includes(error.response.status)) {
+    return true
+  }
 
-if (error.response && RETRYABLE_STATUS_CODES.includes(error.response.status)) {
-
-return true
-
-}
-
-return false
-
+  return false
 }
 
 async function retryWithBackoff(fn, options = {}) {
+  const {
+    maxRetries = 3,
 
-const {
+    initialDelay = 1000,
 
-maxRetries = 3,
+    maxDelay = 10000,
 
-initialDelay = 1000,
+    factor = 2,
+  } = options
 
-maxDelay = 10000,
+  for (let attempt = 0; attempt < maxRetries; attempt++) {
+    try {
+      return await fn()
+    } catch (error) {
+      const isLastAttempt = attempt === maxRetries - 1
 
-factor = 2
+      if (isLastAttempt || !isRetryableError(error)) {
+        throw error
+      }
 
-} = options
+      const delay = Math.min(initialDelay * Math.pow(factor, attempt), maxDelay)
 
-for (let attempt = 0; attempt < maxRetries; attempt++) {
+      console.log(`重试 ${attempt + 1}/${maxRetries}，等待 ${delay}ms...`)
 
-try {
-
-return await fn()
-
-} catch (error) {
-
-const isLastAttempt = attempt === maxRetries - 1
-
-if (isLastAttempt || !isRetryableError(error)) {
-
-throw error
-
+      await new Promise((resolve) => setTimeout(resolve, delay))
+    }
+  }
 }
-
-const delay = Math.min(initialDelay * Math.pow(factor, attempt), maxDelay)
-
-console.log(`重试 ${attempt + 1}/${maxRetries}，等待 ${delay}ms...`)
-
-await new Promise(resolve => setTimeout(resolve, delay))
-
-}
-
-}
-
-}
-
 ```
 
 ### 7. 安全性考虑
@@ -1889,49 +1648,41 @@ await new Promise(resolve => setTimeout(resolve, delay))
 **最佳实践**：
 
 ```typescript
-
 // 加密存储 refresh_token
 
-import crypto from 'crypto'
+import crypto from "crypto"
 
-const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY || 'default-key-change-me'
+const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY || "default-key-change-me"
 
 function encrypt(text: string): string {
+  const cipher = crypto.createCipher("aes-256-cbc", ENCRYPTION_KEY)
 
-const cipher = crypto.createCipher('aes-256-cbc', ENCRYPTION_KEY)
+  let encrypted = cipher.update(text, "utf8", "hex")
 
-let encrypted = cipher.update(text, 'utf8', 'hex')
+  encrypted += cipher.final("hex")
 
-encrypted += cipher.final('hex')
-
-return encrypted
-
+  return encrypted
 }
 
 function decrypt(encrypted: string): string {
+  const decipher = crypto.createDecipher("aes-256-cbc", ENCRYPTION_KEY)
 
-const decipher = crypto.createDecipher('aes-256-cbc', ENCRYPTION_KEY)
+  let decrypted = decipher.update(encrypted, "hex", "utf8")
 
-let decrypted = decipher.update(encrypted, 'hex', 'utf8')
+  decrypted += decipher.final("utf8")
 
-decrypted += decipher.final('utf8')
-
-return decrypted
-
+  return decrypted
 }
 
 // 日志脱敏
 
 function maskToken(token: string): string {
+  if (!token || token.length < 10) return "***"
 
-if (!token || token.length < 10) return '***'
-
-return token.substring(0, 10) + '...' + token.substring(token.length - 10)
-
+  return token.substring(0, 10) + "..." + token.substring(token.length - 10)
 }
 
 console.log(`Token: ${maskToken(refreshToken)}`)
-
 ```
 
 ### 8. 性能优化
@@ -1949,53 +1700,39 @@ console.log(`Token: ${maskToken(refreshToken)}`)
 **最佳实践**：
 
 ```typescript
-
 // 使用 axios 连接池
 
 const axiosInstance = axios.create({
+  timeout: 30000,
 
-timeout: 30000,
+  httpAgent: new http.Agent({ keepAlive: true, maxSockets: 50 }),
 
-httpAgent: new http.Agent({ keepAlive: true, maxSockets: 50 }),
-
-httpsAgent: new https.Agent({ keepAlive: true, maxSockets: 50 })
-
+  httpsAgent: new https.Agent({ keepAlive: true, maxSockets: 50 }),
 })
 
 // 并行处理多个注册任务
 
 async function batchRegister(emails: string[]) {
+  const batchSize = 5 // 每批处理 5 个
 
-const batchSize = 5 // 每批处理 5 个
+  const results = []
 
-const results = []
+  for (let i = 0; i < emails.length; i += batchSize) {
+    const batch = emails.slice(i, i + batchSize)
 
-for (let i = 0; i < emails.length; i += batchSize) {
+    const batchResults = await Promise.allSettled(batch.map((email) => registerAccount(email)))
 
-const batch = emails.slice(i, i + batchSize)
+    results.push(...batchResults)
 
-const batchResults = await Promise.allSettled(
+    // 批次之间延迟，避免触发速率限制
 
-batch.map(email => registerAccount(email))
+    if (i + batchSize < emails.length) {
+      await new Promise((resolve) => setTimeout(resolve, 5000))
+    }
+  }
 
-)
-
-results.push(...batchResults)
-
-// 批次之间延迟，避免触发速率限制
-
-if (i + batchSize < emails.length) {
-
-await new Promise(resolve => setTimeout(resolve, 5000))
-
+  return results
 }
-
-}
-
-return results
-
-}
-
 ```
 
 ---
@@ -2023,33 +1760,23 @@ return results
 - 定期使用 refresh_token 保持活跃
 
 ```typescript
-
 async function ensureValidToken(credential) {
+  try {
+    const accessToken = await refreshAccessToken(credential.refreshToken)
 
-try {
+    return accessToken
+  } catch (error) {
+    if (error.error === "invalid_grant") {
+      console.error("refresh_token 已过期，需要重新授权")
 
-const accessToken = await refreshAccessToken(credential.refreshToken)
+      // 触发重新授权流程
 
-return accessToken
+      await reauthorize(credential)
+    }
 
-} catch (error) {
-
-if (error.error === 'invalid_grant') {
-
-console.error('refresh_token 已过期，需要重新授权')
-
-// 触发重新授权流程
-
-await reauthorize(credential)
-
+    throw error
+  }
 }
-
-throw error
-
-}
-
-}
-
 ```
 
 #### Q: 获取不到验证码邮件？
@@ -2071,33 +1798,25 @@ throw error
 - 更新发件人列表
 
 ```typescript
-
 async function waitForVerificationEmail(accessToken, maxWaitTime = 60000) {
+  const startTime = Date.now()
 
-const startTime = Date.now()
+  const checkInterval = 5000 // 每5秒检查一次
 
-const checkInterval = 5000 // 每5秒检查一次
+  while (Date.now() - startTime < maxWaitTime) {
+    const messages = await fetchRecentMessages(accessToken)
 
-while (Date.now() - startTime < maxWaitTime) {
+    for (const message of messages) {
+      const code = extractVerificationCode(message.body.content)
 
-const messages = await fetchRecentMessages(accessToken)
+      if (code) return code
+    }
 
-for (const message of messages) {
+    await new Promise((resolve) => setTimeout(resolve, checkInterval))
+  }
 
-const code = extractVerificationCode(message.body.content)
-
-if (code) return code
-
+  throw new Error("等待验证码超时")
 }
-
-await new Promise(resolve => setTimeout(resolve, checkInterval))
-
-}
-
-throw new Error('等待验证码超时')
-
-}
-
 ```
 
 ### 2. AWS Builder ID 注册相关
@@ -2117,15 +1836,12 @@ throw new Error('等待验证码超时')
 - 使用 CAPTCHA 识别服务（2captcha、Anti-Captcha）
 
 ```typescript
-
 // 模拟真实用户行为
 
 async function humanLikeDelay(min = 1000, max = 3000) {
+  const delay = Math.random() * (max - min) + min
 
-const delay = Math.random() * (max - min) + min
-
-await new Promise(resolve => setTimeout(resolve, delay))
-
+  await new Promise((resolve) => setTimeout(resolve, delay))
 }
 
 await page.type('input[type="email"]', email, { delay: 100 })
@@ -2133,7 +1849,6 @@ await page.type('input[type="email"]', email, { delay: 100 })
 await humanLikeDelay()
 
 await page.click('button[type="submit"]')
-
 ```
 
 #### Q: 同一邮箱不能重复注册？
@@ -2163,41 +1878,27 @@ await page.click('button[type="submit"]')
 **解决方案**：
 
 ```typescript
-
 async function refreshTokenWithFallback(credential) {
+  const endpoints = [
+    `https://prod.${credential.region}.auth.desktop.kiro.dev/refreshToken`,
 
-const endpoints = [
+    `https://oidc.${credential.region}.amazonaws.com/token`,
+  ]
 
-`https://prod.${credential.region}.auth.desktop.kiro.dev/refreshToken`,
+  for (const endpoint of endpoints) {
+    try {
+      const response = await axios.post(endpoint, {
+        refreshToken: credential.refreshToken,
+      })
 
-`https://oidc.${credential.region}.amazonaws.com/token`
+      return response.data.accessToken
+    } catch (error) {
+      console.log(`端点 ${endpoint} 失败，尝试下一个...`)
+    }
+  }
 
-]
-
-for (const endpoint of endpoints) {
-
-try {
-
-const response = await axios.post(endpoint, {
-
-refreshToken: credential.refreshToken
-
-})
-
-return response.data.accessToken
-
-} catch (error) {
-
-console.log(`端点 ${endpoint} 失败，尝试下一个...`)
-
+  throw new Error("所有刷新端点都失败")
 }
-
-}
-
-throw new Error('所有刷新端点都失败')
-
-}
-
 ```
 
 #### Q: 模型请求返回 403 Forbidden？
@@ -2231,47 +1932,33 @@ throw new Error('所有刷新端点都失败')
 - 遇到 429 时自动切换凭证
 
 ```typescript
-
 class RateLimiter {
+  constructor(maxConcurrent = 5) {
+    this.maxConcurrent = maxConcurrent
 
-constructor(maxConcurrent = 5) {
+    this.currentConcurrent = 0
 
-this.maxConcurrent = maxConcurrent
+    this.queue = []
+  }
 
-this.currentConcurrent = 0
+  async execute(fn) {
+    while (this.currentConcurrent >= this.maxConcurrent) {
+      await new Promise((resolve) => this.queue.push(resolve))
+    }
 
-this.queue = []
+    this.currentConcurrent++
 
+    try {
+      return await fn()
+    } finally {
+      this.currentConcurrent--
+
+      const resolve = this.queue.shift()
+
+      if (resolve) resolve()
+    }
+  }
 }
-
-async execute(fn) {
-
-while (this.currentConcurrent >= this.maxConcurrent) {
-
-await new Promise(resolve => this.queue.push(resolve))
-
-}
-
-this.currentConcurrent++
-
-try {
-
-return await fn()
-
-} finally {
-
-this.currentConcurrent--
-
-const resolve = this.queue.shift()
-
-if (resolve) resolve()
-
-}
-
-}
-
-}
-
 ```
 
 ### 4. Puppeteer 相关
@@ -2339,49 +2026,35 @@ brew install chromium
 **解决方案**：
 
 ```typescript
-
 // 使用更灵活的等待策略
 
 async function waitForElement(page, selector, options = {}) {
+  const { timeout = 30000, visible = true } = options
 
-const { timeout = 30000, visible = true } = options
+  try {
+    await page.waitForSelector(selector, { timeout, visible })
 
-try {
+    return true
+  } catch (error) {
+    // 尝试备用选择器
 
-await page.waitForSelector(selector, { timeout, visible })
+    const alternativeSelectors = [
+      selector.replace('input[type="email"]', 'input[name="email"]'),
 
-return true
+      selector.replace('button[type="submit"]', "button.submit-btn"),
+    ]
 
-} catch (error) {
+    for (const altSelector of alternativeSelectors) {
+      try {
+        await page.waitForSelector(altSelector, { timeout: 5000, visible })
 
-// 尝试备用选择器
+        return true
+      } catch {}
+    }
 
-const alternativeSelectors = [
-
-selector.replace('input[type="email"]', 'input[name="email"]'),
-
-selector.replace('button[type="submit"]', 'button.submit-btn')
-
-]
-
-for (const altSelector of alternativeSelectors) {
-
-try {
-
-await page.waitForSelector(altSelector, { timeout: 5000, visible })
-
-return true
-
-} catch {}
-
+    throw new Error(`元素未找到: ${selector}`)
+  }
 }
-
-throw new Error(`元素未找到: ${selector}`)
-
-}
-
-}
-
 ```
 
 ### 5. 性能与稳定性
@@ -2399,55 +2072,37 @@ throw new Error(`元素未找到: ${selector}`)
 - 使用浏览器池复用实例
 
 ```typescript
-
 class BrowserPool {
+  constructor(maxSize = 3) {
+    this.maxSize = maxSize
 
-constructor(maxSize = 3) {
+    this.pool = []
+  }
 
-this.maxSize = maxSize
+  async acquire() {
+    if (this.pool.length > 0) {
+      return this.pool.pop()
+    }
 
-this.pool = []
+    if (this.pool.length < this.maxSize) {
+      return await puppeteer.launch()
+    }
 
+    // 等待可用实例
+
+    await new Promise((resolve) => setTimeout(resolve, 1000))
+
+    return this.acquire()
+  }
+
+  release(browser) {
+    if (this.pool.length < this.maxSize) {
+      this.pool.push(browser)
+    } else {
+      browser.close()
+    }
+  }
 }
-
-async acquire() {
-
-if (this.pool.length > 0) {
-
-return this.pool.pop()
-
-}
-
-if (this.pool.length < this.maxSize) {
-
-return await puppeteer.launch()
-
-}
-
-// 等待可用实例
-
-await new Promise(resolve => setTimeout(resolve, 1000))
-
-return this.acquire()
-
-}
-
-release(browser) {
-
-if (this.pool.length < this.maxSize) {
-
-this.pool.push(browser)
-
-} else {
-
-browser.close()
-
-}
-
-}
-
-}
-
 ```
 
 #### Q: 如何监控系统运行状态？
@@ -2457,57 +2112,47 @@ browser.close()
 **解决方案**：
 
 ```typescript
-
 // 使用 Winston 记录结构化日志
 
-import winston from 'winston'
+import winston from "winston"
 
 const logger = winston.createLogger({
+  level: "info",
 
-level: 'info',
+  format: winston.format.json(),
 
-format: winston.format.json(),
+  transports: [
+    new winston.transports.File({ filename: "error.log", level: "error" }),
 
-transports: [
-
-new winston.transports.File({ filename: 'error.log', level: 'error' }),
-
-new winston.transports.File({ filename: 'combined.log' })
-
-]
-
+    new winston.transports.File({ filename: "combined.log" }),
+  ],
 })
 
 // 记录关键指标
 
-logger.info('注册完成', {
+logger.info("注册完成", {
+  email: maskEmail(email),
 
-email: maskEmail(email),
+  duration: Date.now() - startTime,
 
-duration: Date.now() - startTime,
-
-success: true
-
+  success: true,
 })
 
 // 使用 Prometheus 导出指标
 
-const promClient = require('prom-client')
+const promClient = require("prom-client")
 
 const register = new promClient.Registry()
 
 const registerCounter = new promClient.Counter({
+  name: "aws_builder_id_registrations_total",
 
-name: 'aws_builder_id_registrations_total',
+  help: "Total number of AWS Builder ID registrations",
 
-help: 'Total number of AWS Builder ID registrations',
-
-labelNames: ['status']
-
+  labelNames: ["status"],
 })
 
 register.registerMetric(registerCounter)
-
 ```
 
 ---
