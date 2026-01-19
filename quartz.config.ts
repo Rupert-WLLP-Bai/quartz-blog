@@ -73,6 +73,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.WordCount(),
       Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Kroki({ alias: ["d2"] }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

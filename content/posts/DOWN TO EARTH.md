@@ -22,6 +22,8 @@ tags:
 ### DONE
 1. [[AWS Builder ID 完整自动化链路实现]] 完全实现一个patch版本 整合了市面上的开源工具
 2. [[AWS Builder ID 自动化注册技术总结]] Claude总结的实现过程与常见问题
+3. 集成D2画图到Quartz4
+4. 
 ## 2026-01-18
 
 ### TODO

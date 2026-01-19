@@ -1,0 +1,34 @@
+// Kroki diagram styling for inline SVG output
+.kroki-diagram {
+  svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+  }
+}
+
+// Theme support for D2 and other Kroki diagrams
+pre.kroki,
+.kroki-container {
+  background-color: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+  padding: 1rem;
+  overflow-x: auto;
+
+  svg {
+    max-width: 100%;
+    height: auto;
+
+    // Ensure text is readable in both themes
+    text {
+      fill: var(--dark);
+    }
+
+    // Adjust stroke colors for theme
+    path, line, polyline, polygon, rect, circle, ellipse {
+      stroke: var(--darkgray);
+    }
+  }
+}
