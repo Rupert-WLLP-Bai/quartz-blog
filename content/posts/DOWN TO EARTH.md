@@ -8,6 +8,10 @@ tags:
   - Learning
   - Blog
 ---
+## 2026-01-20
+## DONE
+1. 高程作业 迁移到 Rust
+2. 加入 [[AWS Builder ID 自动化注册技术总结]]项目的备用邮箱添加逻辑
 ## 2026-01-19
 ### TODO
 1. [[AWS Builder ID 二次开发]] Robust，结合[[Kiro 注册机]]的基础代码继续开发
@@ -23,7 +27,7 @@ tags:
 1. [[AWS Builder ID 完整自动化链路实现]] 完全实现一个patch版本 整合了市面上的开源工具
 2. [[AWS Builder ID 自动化注册技术总结]] Claude总结的实现过程与常见问题
 3. 集成D2画图到Quartz4
-4. 
+4. https://bun.com 
 ## 2026-01-18
 
 ### TODO

@@ -24,3 +24,9 @@ tags:
 ## 2026-01-19
 1. https://github.com/login?return_to=%2Fnguyenphutrong%2Fquotio macOS 多AI账号管理器
 2. https://github.com/Pluviobyte/Kiro-auto-register kiro自动注册
+3. https://github.com/kvnxiao/tauri-tanstack-start-react-template Tauri React集成模板
+## 2026-01-20
+1. https://github.com/BloopAI/vibe-kanban/tree/main agent 看板
+2. https://www.vibekanban.com 看板 主页
+3. https://www.reddit.com/r/ClaudeCode/comments/1q9dmxd/multiagent_orchestration_for_parallel_work_tools/ 关于并行多agent 的讨论
+4. https://github.com/llc-993/matching-core Rust 撮合引擎库
